@@ -30,10 +30,3 @@ while is_race_on:
             else:
                 print(f"You lose. The {winner} turtle is the winner.")
         turtle.forward(random.randint(0, 10))
-
-
-
-
-
-
-# screen.exitonclick()
