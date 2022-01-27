@@ -38,6 +38,13 @@ class Snake:
 
         self.head.forward(MOVE_DISTANCE)
 
+    def reset_snake(self):
+        for segment in self.segments:
+            segment.reset()
+        self.segments.clear()
+        self.create_snake()
+        self.head = self.segments[0]
+
     def up(self):
         if self.head.heading() != DOWN:
             self.head.setheading(UP)
